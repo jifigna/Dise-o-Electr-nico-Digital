@@ -1,0 +1,23 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "Datain.h"
+#include "Flexfft.h"
+
+int main()
+
+{
+
+		sampleoutx_t dataout(FFT_LENGHT);
+
+
+
+		x_time
+	Flexfft(xxxxxx,xxxxx,dataout)
+		x_time
+
+	print(time)
+
+	return 0;
+}

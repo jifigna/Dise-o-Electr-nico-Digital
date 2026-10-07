@@ -1,0 +1,32 @@
+/*
+ * Empty C++ Application
+ */
+
+//#include "Flexfft.h"
+#include "DataIn.h"
+#include "xtime_l.h"
+#include <stdio.h>
+
+int main()
+
+{
+	XTime tStart, tEnd;
+
+
+	sampleOutX_t dataout[FFT_LENGTH];
+
+
+	XTime_GetTime(&tStart);
+	FlexFFT(DataIn, dataout);
+	XTime_GetTime(&tEnd);
+
+	double tiempo_segundos=1.0*(tEnd-tStart)/ COUNTS_PER_SECOND;
+	double tiempo_microsegundos=1000000.0*(tEnd-tStart)/ COUNTS_PER_SECOND;
+
+	printf("Tiempo de ejecucion: %.6f segundos \n", tiempo_segundos);
+	printf("Tiempo de ejecucion: %.2f microsegundos \n", tiempo_microsegundos);
+
+
+
+	return 0;
+}

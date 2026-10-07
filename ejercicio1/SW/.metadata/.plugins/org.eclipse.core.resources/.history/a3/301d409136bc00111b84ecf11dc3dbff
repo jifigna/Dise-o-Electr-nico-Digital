@@ -1,0 +1,27 @@
+/*
+ * Empty C++ Application
+ */
+
+//#include "Flexfft.h"
+#include "DataIn.h"
+#include "xtime_l.h"
+#include <stdio.h>
+
+int main()
+
+{
+	XTime tStart, tEnd;
+
+
+	sampleOutX_t dataout[FFT_LENGTH];
+
+
+	XTime_GetTime(&tStart);
+	FlexFFT(DataIn, dataout);
+	XTime_GetTime(&tEnd);
+		//x_time
+
+
+
+	return 0;
+}

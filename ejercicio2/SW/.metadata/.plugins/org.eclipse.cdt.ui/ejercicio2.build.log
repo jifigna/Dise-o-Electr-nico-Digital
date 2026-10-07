@@ -1,0 +1,15 @@
+20:13:57 **** Auto Build of configuration Debug for project ejercicio2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ejercicio2_bsp/ps7_cortexa9_0/include -I"C:\Users\alumno\digitales\ejercicio2\SW\Ne10-standalone" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:15:20: fatal error: DataIn.h: No such file or directory
+ #include "DataIn.h"
+                    ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+
+20:13:57 Build Finished (took 349ms)
+

@@ -1,0 +1,35 @@
+20:59:51 **** Incremental Build of configuration Debug for project ejercicio1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+20:59:52 **** Incremental Build of configuration Debug for project ejercicio1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+21:01:15 **** Incremental Build of configuration Debug for project ejercicio1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+21:04:04 **** Incremental Build of configuration Debug for project ejercicio1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ejercicio1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ejercicio1.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ejercicio1_bsp/ps7_cortexa9_0/lib -o "ejercicio1.elf"  ./src/Flexfft.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ejercicio1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ejercicio1.elf  |tee "ejercicio1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47448	   6284	  59504	 113236	  1ba54	ejercicio1.elf
+'Finished building: ejercicio1.elf.size'
+' '

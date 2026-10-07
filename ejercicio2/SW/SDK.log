@@ -1,0 +1,27 @@
+19:19:36 INFO  : Registering command handlers for SDK TCF services
+19:19:36 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\alumno\digitales\ejercicio1\SW\temp_xsdb_launch_script.tcl
+19:19:37 INFO  : XSCT server has started successfully.
+19:19:38 INFO  : Successfully done setting XSCT server connection channel  
+19:19:38 INFO  : Successfully done setting SDK workspace  
+19:19:38 INFO  : Processing command line option -hwspec C:/Users/alumno/digitales/ejercicio1/SW/design_1_wrapper.hdf.
+19:48:26 INFO  : Registering command handlers for SDK TCF services
+19:48:26 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\alumno\digitales\ejercicio2\SW\temp_xsdb_launch_script.tcl
+19:48:27 INFO  : XSCT server has started successfully.
+19:48:28 INFO  : Successfully done setting XSCT server connection channel  
+19:48:28 INFO  : Successfully done setting SDK workspace  
+19:48:28 INFO  : Processing command line option -hwspec C:/Users/alumno/digitales/ejercicio2/SW/design_1_wrapper.hdf.
+20:02:20 INFO  : Registering command handlers for SDK TCF services
+20:02:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\alumno\digitales\ejercicio2\SW\temp_xsdb_launch_script.tcl
+20:02:21 INFO  : XSCT server has started successfully.
+20:02:22 INFO  : Successfully done setting XSCT server connection channel  
+20:02:22 INFO  : Successfully done setting SDK workspace  
+20:02:22 INFO  : Processing command line option -hwspec C:/Users/alumno/digitales/ejercicio2/SW/design_1_wrapper.hdf.
+20:02:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+20:09:48 ERROR : Failed to get memory ranges of processor
+Reason: unable to find hardware specification file/project C:/Users/alumno/digitales/ejercicio2/SW/design_1_wrapper_hw_platform_0/system.hdf
+20:10:19 INFO  : Registering command handlers for SDK TCF services
+20:10:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\alumno\digitales\ejercicio2\SW\temp_xsdb_launch_script.tcl
+20:10:20 INFO  : XSCT server has started successfully.
+20:10:20 INFO  : Successfully done setting XSCT server connection channel  
+20:10:20 INFO  : Successfully done setting SDK workspace  
+20:10:20 INFO  : Processing command line option -hwspec C:/Users/alumno/digitales/ejercicio2/SW/design_1_wrapper.hdf.

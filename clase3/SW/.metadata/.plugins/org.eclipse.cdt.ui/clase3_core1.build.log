@@ -1,0 +1,43 @@
+19:15:35 **** Auto Build of configuration Debug for project clase3_core1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main_core1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_core1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../clase3_core1_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/main_core1.d" -MT"src/main_core1.o" -o "src/main_core1.o" "../src/main_core1.c"
+../src/main_core1.c: In function 'main':
+../src/main_core1.c:44:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^~~~~~~~~~~~~
+../src/main_core1.c:46:5: warning: implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]
+     Xil_SetTlbAttributes(0x03000000, SECTION(SHAREABLE|NON_CACHED));
+     ^~~~~~~~~~~~~~~~~~~~
+../src/main_core1.c:50:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+'Finished building: ../src/main_core1.c'
+' '
+'Building file: ../src/mutex.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mutex.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../clase3_core1_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/mutex.d" -MT"src/mutex.o" -o "src/mutex.o" "../src/mutex.S"
+'Finished building: ../src/mutex.S'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../clase3_core1_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: clase3_core1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../clase3_core1_bsp/ps7_cortexa9_1/lib -o "clase3_core1.elf"  ./src/main_core1.o ./src/mutex.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: clase3_core1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size clase3_core1.elf  |tee "clase3_core1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22288	   1996	  22576	  46860	   b70c	clase3_core1.elf
+'Finished building: clase3_core1.elf.size'
+' '
+
+19:15:36 Build Finished (took 908ms)
+

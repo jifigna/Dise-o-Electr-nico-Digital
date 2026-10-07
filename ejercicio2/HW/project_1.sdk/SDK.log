@@ -1,0 +1,6 @@
+19:14:22 INFO  : Registering command handlers for SDK TCF services
+19:14:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\alumno\digitales\ejercicio1\HW\project_1.sdk\temp_xsdb_launch_script.tcl
+19:14:23 INFO  : XSCT server has started successfully.
+19:14:23 INFO  : Successfully done setting XSCT server connection channel  
+19:14:23 INFO  : Successfully done setting SDK workspace  
+19:14:23 INFO  : Processing command line option -hwspec C:/Users/alumno/digitales/ejercicio1/HW/project_1.sdk/design_1_wrapper.hdf.
